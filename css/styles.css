@@ -1,0 +1,95 @@
+/* Styles for my classwork website */
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Quicksand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background: #ddd;
+}
+
+header{
+    /* height: 150px; */
+    background: #ddd;
+}
+
+#logo{
+    width: 190px;
+}
+
+.row{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav{
+    height: 40px;
+    background: rgb(102, 166, 250);
+}
+
+nav ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    float: left;
+    list-style-type: none;
+    text-align: center;
+
+    width: 11.11%;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: #666;
+    display: block;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+main{
+    width: 62%;
+    float: left;
+    height: 400px;
+    line-height: 1.6;
+}
+
+aside{
+    width: 35%;
+    float: right;
+    height: 300px;
+}
+
+footer{
+    height: 100px;
+    background: white;
+    clear: both;
+}
+
+.copyright{
+    height: 50px;
+    line-height: 50px;
+    background: rgb(102, 166, 250);
+}
+
+.copyright li{
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+}
