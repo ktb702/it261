@@ -53,12 +53,15 @@
         </main>
         <aside>
             <h3>My Classwork Assignments</h3>
+            <div class="weekly">
             <ul>
-                <li>Week 2</li>
-                <ul>
-                    <li><a href="week 2/var.php">var.php</a> </li>
-                    <li><a href="week 2/currency-logic.php">currency-logic.php</a></li>
-                </ul>
+                <li>Week 2
+                    <ul>
+                        <li><a href="week2/var.php">var.php</a></li>
+                        <li><a href="week2/currency-logic.php">currency-logic.php</a></li>
+                        <li><a href="week2/heredoc.php">heredoc.php</a></li>
+                    </ul>
+                </li> <!-- end week2 assignment links -->
                 <li>Week 3</li>
                 <li>Week 4</li>
                 <li>Week 5</li>
@@ -66,6 +69,7 @@
                 <li>Week 7</li>
                 <li>Week 8</li>
             </ul>
+            </div> <!-- end weekly class -->
 
             <h3>Final Assignment</h3>
             <p>The final assignment will link to a different website. Currently under construction!</p>
@@ -78,7 +82,7 @@
             <ul>
                 <li>Copyright &copy; <?php echo date('Y');?></li>
                 <li>All Rights Reserved.</li>
-                <li><a href="http://validator.w3.org/check?uri=referer" target="_blank">Valid HTML</a></li>
+                <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatebaldwin.dev%2FIT261%2Findex.php" target="_blank">Valid HTML</a></li>
                 <li><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a></li>
             </ul>
             </div> <!-- end row -->
