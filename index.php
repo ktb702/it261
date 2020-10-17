@@ -29,9 +29,9 @@
             <li><a href="site1/daily.php">Switch - 3</a></li> <!-- link to site1 folder (site1/daily.php) -->
             <li><a href="">Troubleshoot - 4</a></li> <!-- link to a separate page -->
             <li><a href="">Calculator - 5</a></li> <!-- link to a separate page -->
-            <li><a href="">Email - 6</a></li> <!-- link to site1 folder (site1/contact.php) -->
-            <li><a href="">Gallery - 7</a></li> <!-- link to site1 folder (site1/gallery.php) -->
-            <li><a href="">Database - 8</a></li> <!-- link to site1 folder (site1/customers.php) -->
+            <li><a href="site1/contact.php">Email - 6</a></li> <!-- link to site1 folder (site1/contact.php) -->
+            <li><a href="site1/gallery.php">Gallery - 7</a></li> <!-- link to site1 folder (site1/gallery.php) -->
+            <li><a href="site1/customers.php">Database - 8</a></li> <!-- link to site1 folder (site1/customers.php) -->
         </ul>
     </nav>
     </header>
@@ -62,7 +62,14 @@
                         <li><a href="week2/heredoc.php">heredoc.php</a></li>
                     </ul>
                 </li> <!-- end week2 assignment links -->
-                <li>Week 3</li>
+                <li>Week 3
+                    <ul>
+                        <li><a href="week3/arrays.php">arrays.php</a></li>
+                        <li><a href="week3/html-page.php">html-page.php</a></li>
+                        <li><a href="week3/if.php">if.php</a></li>
+                        <li><a href="week3/switch.php">switch.php</a></li>
+                    </ul>
+                </li> <!-- end week3 assignment links -->
                 <li>Week 4</li>
                 <li>Week 5</li>
                 <li>Week 6</li>
@@ -76,17 +83,4 @@
         </aside>
     </div> <!-- end wrapper -->
 
-    <footer>
-        <div class = "copyright">
-            <div class="row">
-            <ul>
-                <li>Copyright &copy; <?php echo date('Y');?></li>
-                <li>All Rights Reserved.</li>
-                <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatebaldwin.dev%2FIT261%2Findex.php" target="_blank">Valid HTML</a></li>
-                <li><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a></li>
-            </ul>
-            </div> <!-- end row -->
-        </div> <!-- end copyright -->
-    </footer>
-</body>
-</html>
+<?php include('includes/footer.php'); ?>
