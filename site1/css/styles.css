@@ -1,0 +1,143 @@
+/* Styles for Site1 website */
+
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #D7D9DA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+}
+
+nav{
+    height: 50px;
+    background: black;
+    width: 100%;
+    float: left;
+}
+
+.menu{
+    margin: 0;
+    padding: 8px;
+    height: 21px;
+    background-color: black;
+}
+
+.menu li{
+    display: inline;
+    font-weight: bold;
+}
+
+.button{
+    font-size: 1.2em;
+    font-style: none;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background: #666;
+}
+
+main.wrapper{
+    margin: auto;
+    overflow: auto;
+}
+
+.daily-list li{
+    list-style-type: square;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 0.8em;
+}
+
+.daily-list a {
+    color: rgb(14, 4, 105);
+}
+
+main{
+    height: 300px;
+    width: 62%;
+    float: left;
+    line-height: 1.5em;
+    min-height: 400px;
+    overflow: auto;
+}
+
+aside{
+    width: 30%;
+    float: right;
+}
+
+footer{
+    height: 100px;
+    clear: both;
+}
+
+.copyright{
+    height: 50px;
+    line-height: 50px;
+    background: black;
+    color: white;
+}
+
+.copyright li{
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+    font-weight: normal;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Daily classes that change the color of the title */
+.sunday{
+    background-color: #E3C767;
+    margin: 10px auto;
+    padding: 10px;
+}
+.monday{
+    background-color: #96E367;
+    margin: 10px auto;
+    padding: 10px;
+}
+.tuesday{
+    background-color: #67D7E3;
+    margin: 10px auto;
+    padding: 10px;
+}
+.wednesday{
+    background-color: #E37367;
+    margin: 10px auto;
+    padding: 10px;
+}
+.thursday{
+    background-color: #7E67E3;
+    margin: 10px auto;
+    padding: 10px;
+}
+.friday{
+    background-color: #755935;
+    margin: 10px auto;
+    padding: 10px;
+}
+.saturday{
+    background-color: #C93B06;
+    margin: 10px auto;
+    padding: 10px;
+}
