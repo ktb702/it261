@@ -13,6 +13,7 @@
 <meta charset="UTF-8"> 
 <title>My Adder Assignment</title>
 <style>
+  <!-- Added styles -->  
   form {
       width: 350px;
       border: 1px solid red;
@@ -33,6 +34,7 @@
   h2 {
       text-align: center;
   }
+  <!-- Done adding styles -->
 </style>
 </head>
 <body>
