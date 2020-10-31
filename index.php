@@ -27,7 +27,7 @@
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="site1/daily.php">Switch - 3</a></li> <!-- link to site1 folder (site1/daily.php) -->
-            <li><a href="">Troubleshoot - 4</a></li> <!-- link to a separate page -->
+            <li><a href="adder.php">Troubleshoot - 4</a></li> <!-- link to a separate page -->
             <li><a href="">Calculator - 5</a></li> <!-- link to a separate page -->
             <li><a href="site1/contact.php">Email - 6</a></li> <!-- link to site1 folder (site1/contact.php) -->
             <li><a href="site1/gallery.php">Gallery - 7</a></li> <!-- link to site1 folder (site1/gallery.php) -->
@@ -70,8 +70,18 @@
                         <li><a href="week3/switch.php">switch.php</a></li>
                     </ul>
                 </li> <!-- end week3 assignment links -->
-                <li>Week 4</li>
-                <li>Week 5</li>
+                <li>Week 4
+                    <ul>
+                        <li><a href="week4/form1.php">form1.php</a></li>
+                        <li><a href="week4/form2.php">form2.php</a></li>
+                    </ul>
+                </li> <!-- end week4 assignment links -->
+                <li>Week 5
+                    <ul>
+                        <li><a href="week5/currency-form.php">currency-form.php</a></li>
+                        <li><a href="week5/sticky.php">sticky.php</a></li>
+                    </ul>
+                </li><!-- end week5 assignment links -->
                 <li>Week 6</li>
                 <li>Week 7</li>
                 <li>Week 8</li>
