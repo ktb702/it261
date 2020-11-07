@@ -28,7 +28,7 @@
             <li><a href="">Home</a></li>
             <li><a href="site1/daily.php">Switch - 3</a></li> <!-- link to site1 folder (site1/daily.php) -->
             <li><a href="adder.php">Troubleshoot - 4</a></li> <!-- link to a separate page -->
-            <li><a href="">Calculator - 5</a></li> <!-- link to a separate page -->
+            <li><a href="my-calculators.php">Calculator - 5</a></li> <!-- link to a separate page -->
             <li><a href="site1/contact.php">Email - 6</a></li> <!-- link to site1 folder (site1/contact.php) -->
             <li><a href="site1/gallery.php">Gallery - 7</a></li> <!-- link to site1 folder (site1/gallery.php) -->
             <li><a href="site1/customers.php">Database - 8</a></li> <!-- link to site1 folder (site1/customers.php) -->
@@ -80,9 +80,17 @@
                     <ul>
                         <li><a href="week5/currency-form.php">currency-form.php</a></li>
                         <li><a href="week5/sticky.php">sticky.php</a></li>
+                        <li><a href="week5/currency-final.php">currency-final.php</a></li>
                     </ul>
                 </li><!-- end week5 assignment links -->
-                <li>Week 6</li>
+                <li>Week 6
+                    <ul>
+                        <li><a href="week6/form-emailable.php">form-emailable.php</a></li>
+                        <li><a href="week6/functions.php">functions.php</a></li>
+                        <li><a href="week6/random-count.php">random-count.php</a></li>
+                        <li><a href="week6/contact.php">contact.php</a></li>
+                    </ul>
+                </li><!-- end week6 assignment links -->
                 <li>Week 7</li>
                 <li>Week 8</li>
             </ul>
