@@ -29,7 +29,7 @@
             <li><a href="site1/daily.php">Switch - 3</a></li> <!-- link to site1 folder (site1/daily.php) -->
             <li><a href="adder.php">Troubleshoot - 4</a></li> <!-- link to a separate page -->
             <li><a href="my-calculators.php">Calculator - 5</a></li> <!-- link to a separate page -->
-            <li><a href="week6/website/contact.php">Email - 6</a></li> <!-- link to our emailable contact form -->
+            <li><a href="website/contact.php">Email - 6</a></li> <!-- link to our emailable contact form -->
             <li><a href="website/gallery.php">Gallery - 7</a></li> <!-- link to website folder (website/gallery.php) -->
             <li><a href="website/customers.php">Database - 8</a></li> <!-- link to website folder (website/customers.php) -->
         </ul>
@@ -96,8 +96,12 @@
                         <li><a href="week7/substr-str_replace.php">substr-str_replace.php</a></li>
                         <!-- <li><a href="week6/functions.php">functions.php</a></li> -->
                     </ul>
-                </li> <!-- end week6 assignment links -->
-                <li>Week 8</li>
+                </li> <!-- end week7 assignment links -->
+                <li>Week 8
+                    <ul>
+                        <li><a href="week8/people.php">people.php</a></li>
+                    </ul>
+                </li> <!-- end week8 assignment links -->
             </ul>
             </div> <!-- end weekly class -->
 
