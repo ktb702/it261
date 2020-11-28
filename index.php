@@ -31,7 +31,7 @@
             <li><a href="my-calculators.php">Calculator - 5</a></li> <!-- link to a separate page -->
             <li><a href="website/contact.php">Email - 6</a></li> <!-- link to our emailable contact form -->
             <li><a href="website/gallery.php">Gallery - 7</a></li> <!-- link to website folder (website/gallery.php) -->
-            <li><a href="website/customers.php">Database - 8</a></li> <!-- link to website folder (website/customers.php) -->
+            <li><a href="website/books.php">Database - 8</a></li> <!-- link to website folder (website/customers.php) -->
         </ul>
     </nav>
     </header>
@@ -102,6 +102,11 @@
                         <li><a href="week8/people.php">people.php</a></li>
                     </ul>
                 </li> <!-- end week8 assignment links -->
+                <li>Week 9
+                    <ul>
+                        <li><a href="week9/register.php">register.php</a></li>
+                    </ul>
+                </li> <!-- end week9 assignment links -->
             </ul>
             </div> <!-- end weekly class -->
 
