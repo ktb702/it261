@@ -1,7 +1,6 @@
 <?php
 include('server.php');
 include('includes/header.php');
-
 ?>
 
 <h1>Login!</h1>
@@ -24,3 +23,5 @@ include('includes/header.php');
 </form>
 
 <p class="center">Haven't Registered? <a href="register.php">Register Here!</a></p>
+
+<?php include('includes/footer.php'); ?>
