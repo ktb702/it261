@@ -1,0 +1,106 @@
+/* Styles for my FINAL-PROJECT website */
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Noto+Sans+JP&family=Rubik&family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background: #444;
+    color: white;
+}
+header{
+    margin-bottom: 20px;
+    /* padding-bottom: 20px; */
+    overflow: hidden;
+    background: #55d6aa;
+}
+
+.inner-header{
+    width: 940px;
+    margin: 0 auto;
+    background: #55d6aa;
+}
+
+#logo{
+    width: 120px;
+    float: left;
+    /* might need some padding? */
+}
+
+#wrapper{
+    clear: both;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    float:right;
+    background: #55d6aa;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block; /*could also use float*/
+    margin-left: 70px;
+    padding-top: 25px; /*used for the animation*/
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    background: #55d6aa;
+    font-size: 14px;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+main{
+    width: 580px;
+    float: left;
+}
+
+aside{
+    width: 340px;
+    margin-top: 15px;
+    float: right;
+}
+
+footer{
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px dotted tan;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+}
+
+footer li{
+    float: left;
+    margin-right: 30px;
+    list-style-type: none;
+}
