@@ -6,37 +6,36 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    background: #444;
-    color: white;
 }
 header{
     margin-bottom: 20px;
     /* padding-bottom: 20px; */
     overflow: hidden;
-    background: #55d6aa;
+    background: #6e9baf;
 }
 
 .inner-header{
     width: 940px;
     margin: 0 auto;
-    background: #55d6aa;
 }
-
+h1, h2{
+    margin: 20px 0;
+}
 #logo{
     width: 120px;
     float: left;
-    /* might need some padding? */
 }
 
 #wrapper{
     clear: both;
     width: 940px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 nav{
     float:right;
-    background: #55d6aa;
+    color: rgb(250, 250, 250) !important;
 }
 nav ul{
     margin: 0;
@@ -45,40 +44,56 @@ nav ul{
 }
 nav li{
     display: inline-block; /*could also use float*/
-    margin-left: 70px;
+    margin-left: 50px;
     padding-top: 25px; /*used for the animation*/
     position: relative;
+    transition: all ease-in-out 250ms;
 }
 nav a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #444;
-    background: #55d6aa;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    color: white;
 }
 nav a:hover{
-    color: #000;
+    color:  rgb(250, 114, 114);
 }
-nav a::before{
+nav a::after{
     content: '';
     display: block;
-    height: 5px;
-
-    background-color: #444;
+    /* height: 5px; */
+    background-color: rgb(250, 114, 114);
     position: absolute;
-    top: 0;
+    bottom: -1em;
+    /* top: 0; */
     width: 0%;
     transition: all ease-in-out 250ms;
 }
-nav a:hover::before{
+nav a:hover::after{
     width: 100%;
 }
 
 .center{
     text-align: center;
 }
-
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.daily h4{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.daily li{
+    list-style-type: square;
+}
+.daily a:link{
+    text-decoration: none;
+    color:  #6e9baf;
+}
 main{
     width: 580px;
     float: left;
@@ -93,14 +108,17 @@ aside{
 footer{
     height: 50px;
     line-height: 50px;
-    border-top: 1px dotted tan;
     clear: both;
-    position: absolute;
-    bottom: 0;
 }
-
+footer a:visited{
+    color: black;
+}
 footer li{
     float: left;
     margin-right: 30px;
     list-style-type: none;
+    text-decoration: overline;
+    text-decoration: underline;
+    padding-top: 100px; 
 }
+

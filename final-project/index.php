@@ -16,8 +16,8 @@ if(isset($_GET['logout'])){
     header('Location: login.php');
 }
 
-include('includes/header.php');
 include('includes/config.php');
+include('includes/header.php');
 ?>
 
 <h1>Welome to our home page!</h1>
@@ -49,9 +49,13 @@ if(isset($_SESSION['success'])) : ?>
 
     <main>
         <h1 class="<?php echo $center; ?>"> <?php echo $mainHeadline;  ?> </h1>
+        <!-- <img class="img" src="images/adream.png" alt="Motivational Quote"> -->
+        <p>Whether you are just starting out or have been programming for a long time, it's a field that will have on a lifelong journey of learning. This website contains some resources to help you on your quest for information. Please also check out our daily course specials on our daily page!</p>
+        
     </main>
     <aside>
-        <h2>This is my aside</h2>
+        <h2></h2>
+        <img class="img" src="images/homepage.jpg" alt="Self Taught Developer">
     </aside>
 <?php 
 include('includes/footer.php');

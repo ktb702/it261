@@ -1,3 +1,4 @@
+
 <footer>
 <ul>
     <li>Copyright &copy; <?php 
@@ -17,8 +18,8 @@
     <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkatebaldwin.dev%2FIT261%2Fwebsite%2Findex.php&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a></li>
     </ul> 
 </footer>
-</div>  <!-- end wrapper-->
 
+</div>  <!-- end wrapper-->
 </body>
 
 </html>

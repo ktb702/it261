@@ -31,7 +31,7 @@ switch(THIS_PAGE){
     break;
     case 'contact.php': 
         $title = 'Contact us today!';
-        $mainHeadline = 'Please send us your feedback or just say hello!';
+        $mainHeadline = 'Conact us for more resources!';
         //$center = 'center';
         $body = 'contact inner';
     break;
@@ -61,6 +61,105 @@ function makeLinks($nav){
     } //end foreach
     return $myReturn;
 }//end makeLinks
+
+/**************************************/
+/****** PHP FOR EMAILABLE FORM  *******/
+/**************************************/
+
+$firstName = '';
+$lastName = '';
+$email = '';
+$mail = '';
+$topics = '';
+$comments = '';
+$privacy = '';
+
+$firstNameErr = '';
+$lastNameErr = '';
+$emailErr = '';
+$mailErr = '';
+$topicsErr = '';
+$commentsErr = '';
+$privacyErr = '';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    
+    //we need to declare our errors first. if a field is empty, do something.
+    if(empty($_POST['firstName'])){
+        $firstNameErr = 'Please fill out your first name!';
+    }else{
+        $firstName = $_POST['firstName'];
+    }
+    if(empty($_POST['lastName'])){
+        $firstNameErr = 'Please fill out your last name!';
+    }else{
+        $lastName = $_POST['lastName'];
+    }
+    if(empty($_POST['email'])){
+        $emailErr = 'Please fill out your email!';
+    }else{
+        $email = $_POST['email'];
+    }
+    if(empty($_POST['mail'])){
+        $mailErr = 'Please pick one!';
+    }else{
+        $mail = $_POST['mail'];
+    }
+    if($mail == 'yes'){
+        $yes = 'checked';
+    }elseif($mail == 'no'){
+        $no = 'checked';
+    }
+    if(empty($_POST['topics'])){
+        $topicsErr = "Please let us know what topics you're interested in!";
+    }else{
+        $topics = $_POST['topics'];
+    }
+    if(empty($_POST['comments'])){
+        $commentsErr = 'Please give us your feedback!';
+    }else{
+        $comments = $_POST['comments'];
+    }
+    if(empty($_POST['privacy'])){
+        $privacyErr = 'Please agree to our privacy rules!';
+    }else{
+        $privacy = $_POST['privacy'];
+    }
+
+    //if end user checks the checkboxes, all of them, we want to know
+    //implode the array of topics - creates a function for that
+    function myTopics(){
+        $myReturn = '';
+        if(!empty($_POST['topics'])){
+            $myReturn = implode(',', $_POST['topics']);
+        } //end if
+        return $myReturn;
+    } //end myTopics    
+
+    if(isset($_POST['firstName'],
+        $_POST['lastName'],
+        $_POST['email'],
+        $_POST['mail'],
+        $_POST['topics'],
+        $_POST['comments'],
+        $_POST['privacy'] ))
+        {
+            $to = 'katharine.baldwin@seattlecolleges.edu';
+            $subject = 'Test Email' .date('m/d/y');
+            $body = "$firstName has filled out your form" .PHP_EOL;
+            $body .= "Email: $email" .PHP_EOL;
+            $body .= 'Interested in: '.myTopics().' '.PHP_EOL;
+            $body .= "Mailing List?: $mail" .PHP_EOL;
+            $body .= "Comments $comments";
+
+            $headers = array(
+                'From' => 'noreply@seattlecollege.edu',
+                'Reply-to' => ' '.$email.''
+            );
+            mail($to, $subject, $body, $headers);
+            header('Location: thx.php');
+        } //end isset
+}
 
 include('credentials.php');
 //PLEASE REMEMBER - THIS IS PLACED AT THE VERY BOTTOM OF YOUR CONFIG FILE
