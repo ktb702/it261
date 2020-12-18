@@ -7,7 +7,7 @@ define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 switch(THIS_PAGE){
     case 'index.php': 
         $title = 'Our Programming Resources Hub';
-        $mainHeadline = 'Welcome to our Home Page!';
+        $mainHeadline = 'Welcome to our home page!';
         $center = 'center';
         $body = 'home';
     break;
@@ -31,7 +31,7 @@ switch(THIS_PAGE){
     break;
     case 'contact.php': 
         $title = 'Contact us today!';
-        $mainHeadline = 'Conact us for more resources!';
+        $mainHeadline = 'Contact us for more resources!';
         //$center = 'center';
         $body = 'contact inner';
     break;
@@ -71,6 +71,7 @@ $lastName = '';
 $email = '';
 $mail = '';
 $topics = '';
+$ref = '';
 $comments = '';
 $privacy = '';
 
@@ -79,6 +80,7 @@ $lastNameErr = '';
 $emailErr = '';
 $mailErr = '';
 $topicsErr = '';
+$refErr = '';
 $commentsErr = '';
 $privacyErr = '';
 
@@ -91,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $firstName = $_POST['firstName'];
     }
     if(empty($_POST['lastName'])){
-        $firstNameErr = 'Please fill out your last name!';
+        $lastNameErr = 'Please fill out your last name!';
     }else{
         $lastName = $_POST['lastName'];
     }
@@ -114,6 +116,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $topicsErr = "Please let us know what topics you're interested in!";
     }else{
         $topics = $_POST['topics'];
+    }
+    if($_POST['ref'] == NULL){
+        $refErr = "Let us know how you got here!";
+    }else{
+        $ref = $_POST['ref'];
     }
     if(empty($_POST['comments'])){
         $commentsErr = 'Please give us your feedback!';
@@ -141,15 +148,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $_POST['email'],
         $_POST['mail'],
         $_POST['topics'],
+        $_POST['ref'],
         $_POST['comments'],
         $_POST['privacy'] ))
         {
-            $to = 'katharine.baldwin@seattlecolleges.edu';
+            $to = 'szemeo@mystudentswa.com';
             $subject = 'Test Email' .date('m/d/y');
             $body = "$firstName has filled out your form" .PHP_EOL;
             $body .= "Email: $email" .PHP_EOL;
             $body .= 'Interested in: '.myTopics().' '.PHP_EOL;
             $body .= "Mailing List?: $mail" .PHP_EOL;
+            $body .= "Referred by: $ref" .PHP_EOL;
             $body .= "Comments $comments";
 
             $headers = array(
@@ -161,8 +170,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         } //end isset
 }
 
-// include('credentials.php');
-// include('credentials2.php');
+include('includes/credentials.php');
+
 //PLEASE REMEMBER - THIS IS PLACED AT THE VERY BOTTOM OF YOUR CONFIG FILE
 function myError($myFile, $myLine, $errorMsg){
     if(defined('DEBUG') && DEBUG){
