@@ -32,6 +32,7 @@
             <li><a href="website/contact.php">Email - 6</a></li> <!-- link to our emailable contact form -->
             <li><a href="website/gallery.php">Gallery - 7</a></li> <!-- link to website folder (website/gallery.php) -->
             <li><a href="website/books.php">Database - 8</a></li> <!-- link to website folder (website/customers.php) -->
+            <li><a href="final-project/login.php">Final Project</a></li>
         </ul>
     </nav>
     </header>
@@ -110,8 +111,6 @@
             </ul>
             </div> <!-- end weekly class -->
 
-            <h3>Final Assignment</h3>
-            <p>The final assignment will link to a different website. Currently under construction!</p>
         </aside>
     </div> <!-- end wrapper -->
 
