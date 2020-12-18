@@ -161,7 +161,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         } //end isset
 }
 
-include('credentials.php');
+// include('credentials.php');
+// include('credentials2.php');
 //PLEASE REMEMBER - THIS IS PLACED AT THE VERY BOTTOM OF YOUR CONFIG FILE
 function myError($myFile, $myLine, $errorMsg){
     if(defined('DEBUG') && DEBUG){
