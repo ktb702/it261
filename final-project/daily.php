@@ -1,5 +1,4 @@
-<?php 
-
+<?php     
 if(isset($_GET['today'])){
     $today = $_GET['today'];
 }else{
@@ -106,27 +105,50 @@ include('includes/config.php');
 include('includes/header.php'); 
 ?>
 
-        <main>
-            <h1 class="<?php echo $class; ?>"><?php echo $daily; ?></h1>
-            <h3><?php echo $course; ?></h3>
-            <p><a href= "<?php echo $link; ?>">Start Now!</a></p>
-            <p><?php echo $desc; ?></p>
+<?php
+session_start();
 
-            <div class="daily">
-            <h4>Click below to find out what our featured course of the day is!</h4>
-            <ul class="daily-list">
-                <li><a href="daily.php?today=Sunday">Sunday</a></li>
-                <li><a href="daily.php?today=Monday">Monday</a></li>
-                <li><a href="daily.php?today=Tuesday">Tuesday</a></li>
-                <li><a href="daily.php?today=Wednesday">Wednesday</a></li>
-                <li><a href="daily.php?today=Thursday">Thursday</a></li>
-                <li><a href="daily.php?today=Friday">Friday</a></li>
-                <li><a href="daily.php?today=Saturday">Saturday</a></li>
-            </ul>
-            </div> <!-- end daily -->
-        </main>
-        <aside>
-        <img class="img" src="<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
-        </aside>
+if(!isset($_SESSION['UserName'])) {
+    $_SESSION['msg'] = 'You must log in first!';
+    header('Location: login.php');
+}//end if
+if(isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['UserName']);
+    header('Location: login.php');
+}
+?>
+   
+<div class="error success">
+<?php
+if(isset($_SESSION['UserName'])) : ?> 
+Hello, 
+<?php echo $_SESSION['UserName']; ?>
+<p><a href="index.php?logout='1' ">Log out!</a></p>
+</div>
+<?php endif ?>
+
+    <main>
+        <h1 class="<?php echo $class; ?>"><?php echo $daily; ?></h1>
+        <h3><?php echo $course; ?></h3>
+        <p><a href= "<?php echo $link; ?>">Start Now!</a></p>
+        <p><?php echo $desc; ?></p>
+
+        <div class="daily">
+        <h4>Click below to find out what our featured course of the day is!</h4>
+        <ul class="daily-list">
+            <li><a href="daily.php?today=Sunday">Sunday</a></li>
+            <li><a href="daily.php?today=Monday">Monday</a></li>
+            <li><a href="daily.php?today=Tuesday">Tuesday</a></li>
+            <li><a href="daily.php?today=Wednesday">Wednesday</a></li>
+            <li><a href="daily.php?today=Thursday">Thursday</a></li>
+            <li><a href="daily.php?today=Friday">Friday</a></li>
+            <li><a href="daily.php?today=Saturday">Saturday</a></li>
+        </ul>
+        </div> <!-- end daily -->
+    </main>
+    <aside>
+    <img class="img" src="<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
+    </aside>
 
 <?php include('includes/footer.php'); ?>

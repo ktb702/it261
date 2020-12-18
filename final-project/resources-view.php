@@ -1,6 +1,5 @@
 <?php //PHP FOR RESOURCECS-VIEW
 include('includes/config.php');
-include('credentials2.php');
 
 if(isset($_GET['id'])){
     $id = (int)$_GET['id'];
@@ -11,7 +10,7 @@ if(isset($_GET['id'])){
 $sql2 = 'SELECT * FROM Resources WHERE ResourceID = '.$id.'';
 
 //connect to our database
-$iConn2 = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) 
+$iConn2 = @mysqli_connect(DB_HOST2,DB_USER2,DB_PASSWORD2,DB_NAME2) 
 or die(myerror(__FILE__,__LINE__,mysqli_connect_error()));
 //we extract the data here
 

@@ -1,6 +1,6 @@
 <?php //server page
 session_start();
-include('credentials.php');
+// include('includes/credentials.php');
 include('includes/config.php');
 
 //initialize the variables

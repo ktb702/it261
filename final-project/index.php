@@ -20,36 +20,21 @@ include('includes/config.php');
 include('includes/header.php');
 ?>
 
-<h1>Welome to our home page!</h1>
-
-<?php 
-//Notification message
-//is the session successful
-if(isset($_SESSION['success'])) : ?>
-<div class="error success">
-    <h3>
-        <?php
-        echo $_SESSION['success'];
-        unset($_SESSION['success']);
-        ?>
-    </h3>
-</div> <!-- end error success -->  
-<?php endif ?>
+<h3>You are now logged in.</h3>
 
 <div class="error success">
 <?php 
-    if(isset($_SESSION['UserName'])) : ?>
-    <h3> Welcome, 
-        <?php echo $_SESSION['UserName']; 
-            echo '<br>'; ?>
-    </h3>
-    <p><a href="index.php?logout=1">Log out</a></p>
+if(isset($_SESSION['UserName'])) : ?>
+<h3> Hello, 
+    <?php echo $_SESSION['UserName']; 
+        echo '<br>'; ?>
+</h3>
+<p><a href="index.php?logout=1">Log out</a></p>
 </div> <!-- end error success -->  
 <?php endif ?>
 
     <main>
         <h1 class="<?php echo $center; ?>"> <?php echo $mainHeadline;  ?> </h1>
-        <!-- <img class="img" src="images/adream.png" alt="Motivational Quote"> -->
         <p>Whether you are just starting out or have been programming for a long time, it's a field that will have on a lifelong journey of learning. This website contains some resources to help you on your quest for information. Please also check out our daily course specials on our daily page!</p>
         
     </main>
