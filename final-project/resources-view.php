@@ -31,7 +31,6 @@ if(mysqli_num_rows($result2) > 0){
 include('includes/header.php');
 ?>
 
-<div id="wrapper">
 <main>
     <h1> <?php echo $Name;  ?> </h1>
     <?php 
