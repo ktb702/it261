@@ -29,6 +29,12 @@ switch(THIS_PAGE){
         $center = 'center';
         $body = 'resources inner';
     break;
+    case 'resources-view.php': 
+        $title = 'Individual Programming Resources';
+        $mainHeadline = 'The best resources for self-taught programmers.';
+        $center = 'center';
+        $body = 'resources inner';
+    break;
     case 'contact.php': 
         $title = 'Contact us today!';
         $mainHeadline = 'Contact us for more resources!';
